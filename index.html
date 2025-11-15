@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Haidar Apps</title>
+
+     <!-- link to external css file -->
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwing CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body style="justify-items: center;
+             align-content: center;
+             height: 100vh;">
+
+    <!-- header section -->
+    <header>
+        <h1 class="text-2xl font-bold pb-5">Todo List Apps</h1>
+    </header>
+
+<!-- main content goes here -->
+    <main>
+        <!-- form section -->
+         <section  class="form-section">
+            <form>
+                <!-- Todo Input -->
+                 <input type="text" class="border rounded p-2" id="todo-input" placeholder="Enter a new todo item">
+
+                 <!-- Date Input -->
+                  <input type="date" class="border rounded p-2" id="todo-date" placeholder="Enter due date">
+            </form>
+            <!-- Add Button -->
+            <button type="button" onclick=" addTodo();" class="border rounded p-2 bg-green-500 text-white">Add Todo</button>
+         </section>
+
+         <!-- Action section -->
+          <secton class="flex pt-2 justify-between">
+           
+             <!-- Filter Options -->
+              <button class="border rounded p-2 bg-blue-500 text-white">Filter Todos</button>
+
+               <!-- Clear All Button -->
+             <button class="border rounded p-2 bg-red-500 text-white">Clear All Todos</button>
+          </secton>
+
+          <!-- Todo List Section -->
+           <section class="pt-2">
+               <header>
+                       <h1 class="text-2xl font-semibold">list  Of Todos</h1>
+               </header>
+               <ul class="pt-2" id="todo-list">
+                   <!-- Todo items will be dynamically added here -->
+                    <li>No Todos Available </li>
+             </ul>
+           </section>   
+    </main>
+
+    <!-- footer section -->
+    <footer class="pt-5">
+        <p>&copy;2025 Todo List Haidar Apps</p>
+    </footer>
+    
+    <!-- link to external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
